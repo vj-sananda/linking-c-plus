@@ -1,3 +1,5 @@
+rm -rf lib
+mkdir lib
 
 #Library object files
 #compile with PIC flag (Position Independent Code)

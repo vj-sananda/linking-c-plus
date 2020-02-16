@@ -1,3 +1,5 @@
+rm -rf lib 
+mkdir lib
 
 #Library object files
 g++ -c sub.cpp
