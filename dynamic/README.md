@@ -1,4 +1,21 @@
 ===================================================================
+Dynamically loaded library
+
+Executable is built with a link the dynamic library.
+Have to tell the OS where to find this library.
+
+Procedure differs between Linux and MAC OS X.
+See below.
+
+If the dynamic library cannot be found, the executable will not run.
+As opposed to a library that is statically linked (i,e made part
+of the executable)
+
+On Windows, static libraries have a .lib extension, while
+dynamic libraries have .dll extension. Just info. No windows 
+example here.
+
+===================================================================
 
 On Linux
 
