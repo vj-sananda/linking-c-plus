@@ -1,7 +1,0 @@
-If you rename lib to something else
-the executable will fail with:
-
-dyld: Library not loaded: ./lib/libaddsub.so
-  Referenced from: /Users/vsananda/projects/linking-c++/dynamic/./main.exe
-    Reason: image not found
-    Abort trap: 6

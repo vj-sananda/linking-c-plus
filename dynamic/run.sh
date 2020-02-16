@@ -6,6 +6,8 @@ g++ -c -fPIC sub.cpp
 g++ -c -fPIC add.cpp
 
 #Create dynamic library
+#Looks like the extension of .so or .dylib makes no difference for
+#Linux or MAC OS X
 echo "g++ -shared -o ./lib/libaddsub.dylib add.o sub.o "
 echo ""
 g++ -shared -o ./lib/libaddsub.dylib add.o sub.o 
@@ -21,4 +23,8 @@ echo " Create main 2nd way"
 g++ main.cpp  -o main.exe  ./lib/libaddsub.dylib
 ./main.exe 
 
+#On MAC OS X only
 otool -L ./main.exe
+
+#On Linux
+ldconfig -p | grep addsub
