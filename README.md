@@ -1,2 +1,1 @@
-See README.md within dynamic
-and static
+See README.md within dynamic and static
